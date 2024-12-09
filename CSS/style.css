@@ -1,0 +1,455 @@
+body {
+    background-color: #FFCB05; /* Background color */
+    color: #00274C; /* Text color */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 5%; /* Padding around the content */
+}
+html {
+    font-size: 100%; /* 默认 16px */
+}
+h1 {
+    font-size: 200%; /* Adjust font size for mobile */
+    text-align: center; /* Center align headings */
+}
+
+h2 {
+    font-size: 150%; /* Adjust font size for mobile */
+    text-align: center; /* Center align headings */
+    margin: 0%;
+    font-weight: bolder;
+}
+strong {
+    font-weight: bolder;
+}
+
+p {
+    font-size: 100%; /* Font size for paragraphs */
+    margin: 0; /* Remove default margin */
+    line-height: 120%; /* Line height for readability */
+}
+
+body > header {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    background-color: #00274C;
+    z-index: 1000;
+}
+
+header > img {
+    max-height: 45px;
+    width: auto; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0%;
+ 
+}
+nav > ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+img.UMSI-LOGO {
+    padding: 1%;
+    background-color: white;
+}
+
+.slides {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+nav ul {
+    padding-left: 10%;
+    margin: 0%;
+}
+
+nav ul li {
+    color: white;
+    padding: 1%;
+    margin: 2%;
+}
+
+nav a {
+    font-size: 120%;
+    color: white;
+}
+
+.active {
+    color: #FFCB05;
+    font-weight: bolder;
+    border-bottom: 2px solid;
+}
+
+/* Targeting the section with class 'start' */
+.start {
+    display: grid;
+    align-content: center;
+    font-style: italic; /* Apply italic style to everything in this section */
+    text-align: center;
+    padding: 2% 0%;
+    gap: 7px;
+}
+
+.left {
+    text-align: left;
+}
+
+.start ol, .start ul {
+    text-align: left;
+
+    margin: 1% 0%;
+    padding: 0% 5%;
+}
+
+.start ul li{
+    margin: 0% 0% 1%;
+}
+
+/* Grid Layout for Main Content */
+.container {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr;
+    align-content: center;
+    background-color: white;
+    padding: 10px 4%;
+    border-radius: 8px;
+    gap: 10px; 
+    margin-top: 3%;
+}
+
+/* Article Styles */
+article {
+    background-color: #FFCB05; /* Background for articles */
+    padding: 1%; /* Padding for articles */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+article p {
+    
+    margin: 0% 0% 3%;
+    line-height: 120%; /* Line height for readability */
+}
+
+/* food pantry */
+article.we-provide {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    align-items: center;
+}
+
+/* food pantry */
+article.we-provide img{
+    max-width:90%;
+    height: auto;
+}
+
+/* food pantry */
+.news {
+    color: #FFCB05;
+    background-color: #00274C;
+    text-align: left;
+}
+
+article.NEWS img {
+    max-width: 500px;
+    height: auto;
+    justify-self: center; /* Center horizontally */
+    align-self: center;   /* Center vertically */
+    object-fit: cover;
+    object-position: center;
+}
+
+figcaption {
+    font-size: 70%; /* Font size for captions */
+    text-align: left;
+}
+
+/* Image Styles */
+figure {
+    margin: 0; /* Reset margin */
+}
+
+img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* List Styles */
+ul{
+    font-size:100%;
+    padding-left: 7%; /* Indent for unordered list */
+}
+/* ul li {
+    margin: 0% 0% 3%;
+} */
+
+footer {
+    text-align: center; /* Center align footer content */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Accessibility Enhancements */
+a {
+    color: #00274C; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for accessibility */
+}
+
+nav a:hover, a:focus{
+    text-decoration: underline;
+  }
+  
+  /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+  .skip a{
+    position: absolute;
+    top: -40px;
+  }
+  
+  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+  .skip a:focus{
+    top: 20px;
+  }
+  
+  /* Step 3: Write selector/rule property to style all elements when in focus*/
+  *:focus{
+    border: 2px solid;
+  }
+
+  .error-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-container h1 {
+    font-size: 120px;
+    color: #ff6b6b;
+    margin: 0;
+}
+
+.error-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.error-container p {
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0% 12%; /* Padding around the content */
+    }
+
+    
+    
+    body > header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    body > header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    header > img {
+        height: 300px;
+    }
+    nav > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+    .provide {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2%;
+        column-gap: 1%;
+    }
+
+    article.we-provide img{
+        max-width:60%;
+        height: auto;
+    }
+    .four_news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0.5%;
+        column-gap: 1%;
+    }
+    .spaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap:1%;
+    }
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    h1 {
+        line-height: 200%;
+        font-weight: bolder;
+    }
+    body {
+        padding: 0% 4%;
+    }
+
+    article p {
+        line-height: 120%;
+        margin: 0% 0%;
+    }
+
+    figure {
+        margin: 0 0 0 22%;
+    }
+
+    .container {
+        display: grid; /* Enable grid layout */
+        grid-template-columns: 1fr 2fr;
+        padding: 1% 3%;
+        align-items: center;
+    }
+
+    .Container {
+        display: grid; /* Enable grid layout */
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1%;
+    }
+    
+    .unique-section > .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 430px;
+        align-content: space-evenly;
+    }
+
+    .bp31 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1%;
+        align-items: center;
+    }
+
+    .start {
+        display: grid; /* Enable grid layout */
+        grid-template-columns: 1fr;
+        align-content: center;
+        background-color: white;
+        padding: 1% 3%;
+        border-radius: 8px;
+        margin-top: 3%;
+        gap: 7px;
+        align-content: stretch;
+    }
+    
+    .bp312 > .container {
+        display: grid; /* Enable grid layout */
+        grid-template-columns: 1fr;
+        padding: 1% 3%;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        transition: transform 0.5s ease-in-out;
+        width: 200%; /* 两张图片 */
+    }
+
+    .pic {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .slides img {
+        width: 70%;
+        flex-shrink: 0;
+        object-fit: cover;
+        height: auto;
+    }
+
+    #prev, #next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;    
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    #prev {
+        left: 10px;
+    }
+
+    #next {
+        right: 10px;
+    }
+
+    /* academic support */
+    .academic {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* study space */
+    .NOTE {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .space1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .space2 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    
+}
+
+@media screen and (max-width: 1023px) {
+    .slider {
+        display: block; 
+    }
+
+    #prev, #next {
+        display: none; 
+    }
+}

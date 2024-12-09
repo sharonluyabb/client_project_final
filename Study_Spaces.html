@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Study Spaces</title>
+</head>
+<body>
+    <div class="skip"><a href = "#main">Skip to Main Content</a></div>
+    <header>
+        <img src = "images/logo_studt_space.png" alt = "Study Spaces Logo">
+        <nav>
+            <ul>
+                <li><a href = "index.html">Life Portal</a></li>
+                <li><a href = "UMSI_Tutoring_Academic_Support.html">Academic Support</a></li>
+                <li><a href = "Study_Spaces.html" class="active">Study Spaces</a></li>
+                <li><a href = "Food_Pantry.html">Food Pantry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id = "main">
+        <h1>Study Spaces</h1>
+        <div class="container space1">
+            <p>Study Spaces at U-M is a tool designed to help you find and reserve designated study spaces, computer stations, a space for you to take a remote class, or just a dedicated quiet touchdown spot between classes. It's understandable that many might be anxious that there aren't many spaces on the site, after going through the last academic year where the primary method of accessing study space was to reserve. As we proceed into the next academic year, several spaces have been designated as open and reservations are not needed. Some units took spaces offline that were offered, as they currently have in-person classes this semester, or an increase in need for event space.</p>
+            <ul>
+                <li>Please be aware that there are walk-in study spaces again, and that this site is not an exhaustive list of study spaces.</li>
+                <li>Many Campus spaces are back to full availability.</li>
+                <li>Spaces at the Library are walk-in while Study Spaces are reconfigured with reservable space. Currently, there are 1st floor tables and 2nd floor reservable rooms. The Library will be a mix of walk-in and bookable spaces.</li>
+            </ul>
+        </div>
+
+        <div class="container space2">
+            <h2>Explore what’s available and where</h2>
+            <div>
+                <div class="spaces">
+                    <div class="pic">
+                        <p> North Campus</p>
+                        <img src = images/north_campus.jpg alt = "North Campus">
+                    </div>
+
+                    <div class="pic">
+                        <p> U-M Library</p>
+                        <img src = images/library.jpg alt = "Library">
+                    </div>
+                    
+                    <div class="pic">
+                        <p>Detroit Center</p>
+                        <img src = images/detroit_center.jpg alt = "Detroit Center">
+                    </div>
+                </div>
+                
+                <p>See <a href="https://studyspaces.umich.edu/reserve-study-space">How to Reserve Study Space </a> for reservation instructions.</p>
+            </div>
+
+            
+        </div>
+        <div class="container NOTE">
+            <p>NOTE: This site lists study spaces available to the U-M student community at large. Students may have access to other spaces directly through their schools, colleges, and departments.</p>
+        </div>
+
+    </main>
+    <footer>
+        <p><a href="https://its.umich.edu/">Information and Technology Services</a></p>
+        <p>How can we help you?</p>
+        <p>To get help or offer feedback, contact the ITS Service Center.</p>
+        <p><a href="https://chatsupport.it.umich.edu/">Chat: chatsupport.it.umich.edu</a></p>
+        <p><a href="tel:734-764-4357">Call: 734-764-HELP (764-4357)</a></p> 
+        <p><a href="https://regents.umich.edu/"> &copy; <span id="year"></span> Regents of the University of Michigan</a></p>
+    </footer>
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        // Set the year in the element with id 'year'
+        document.getElementById('year').textContent = currentYear;
+    </script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
