@@ -486,7 +486,12 @@ nav a:hover, a:focus{
     }
 
     /* food pantry */
-    #food {
+    #food1 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    #food2 {
         display: grid;
         grid-template-columns: 1fr 4fr;
     }
