@@ -205,25 +205,25 @@ a:hover {
 
 nav a:hover, a:focus{
     text-decoration: underline;
-  }
+}
   
-  /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
-  .skip a{
+/* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+.skip a{
     position: absolute;
     top: -40px;
-  }
+}
   
-  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
-  .skip a:focus{
+/* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+.skip a:focus{
     top: 20px;
-  }
+}
   
-  /* Step 3: Write selector/rule property to style all elements when in focus*/
-  *:focus{
+/* Step 3: Write selector/rule property to style all elements when in focus*/
+*:focus{
     border: 2px solid;
-  }
+}
 
-  .error-container {
+.error-container {
     text-align: center;
     max-width: 600px;
     padding: 20px;
@@ -251,11 +251,28 @@ nav a:hover, a:focus{
 }
 
 @media screen and (min-width: 768px) {
+      
+    /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+    .skip a{
+        position: absolute;
+        top: -40px;
+    }
+      
+    /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+    .skip a:focus{
+        top: 50px;
+    }
+      
+    /* Step 3: Write selector/rule property to style all elements when in focus*/
+    *:focus{
+        border: 2px solid;
+    }
+
+
+
     body {
         padding: 0% 12%; /* Padding around the content */
     }
-
-    
     
     body > header {
         position: fixed;
@@ -311,6 +328,24 @@ nav a:hover, a:focus{
 
 
 @media screen and (min-width:1024px) {
+
+    /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+    .skip a{
+        position: absolute;
+        top: -40px;
+    }
+      
+    /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+    .skip a:focus{
+        top: 50px;
+    }
+      
+    /* Step 3: Write selector/rule property to style all elements when in focus*/
+    *:focus{
+        border: 2px solid;
+    }
+
+
     h1 {
         line-height: 200%;
         font-weight: bolder;
