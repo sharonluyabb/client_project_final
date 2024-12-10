@@ -133,6 +133,12 @@ article p {
     line-height: 120%; /* Line height for readability */
 }
 
+.provide {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
 /* food pantry */
 article.we-provide {
     display: grid;
@@ -300,6 +306,7 @@ nav a:hover, a:focus{
     main {
         margin-top: 80px;
     }
+
     .provide {
         display: grid;
         grid-template-columns: 1fr 1fr;
